@@ -2,13 +2,11 @@
 """
 We are using a small REST server to control our robot.
 """
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import math
 from multiprocessing import Process, Queue
-
-from flask import Flask, render_template, request
 
 
 
